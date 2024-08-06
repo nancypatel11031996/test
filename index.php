@@ -63,7 +63,7 @@ header {
     justify-content: space-between;
     padding: 60px;
     margin-top:0 ;
-    background-image: url('beach-image.png');
+    background-image: url('website/beach-image.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -390,7 +390,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
-    background: url('path_to_background_image') no-repeat center center/cover;
+    background: url('website/beach-image.png') no-repeat center center/cover;
     color: white;
 }
 
