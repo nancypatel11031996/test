@@ -353,74 +353,183 @@ header {
     margin-top: 10px;
     border-radius: 10px;
 }
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.create-trip {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.user-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('path_to_background_image') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.plan-itinerary-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.hero-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.hero-form input[type="text"],
+.hero-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.hero-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
 </style>
 <body>
-    <header>
+<header>
         <div class="logo">
-            <img src="logo.png" alt="">
+            <img src="website/logo.png" alt="The Tarzan Way Logo">
         </div>
-        <div class="search">
-        <img src="search.png"><input type="text" placeholder="Where do you want to go?" id="search-input">
+        <div class="search-bar">
+            <img src="website/search.png">
+            <input type="text" placeholder="Where do you want to go?">
         </div>
-        <div class="header-buttons">
-            <button class="tip-button">Create a Tip</button>
-            <button class="login-button">Login</button>
+        <div class="user-options">
+            <button class="create-trip">Create a Trip</button>
+            <div class="user-icon">
+                <img src="path_to_user_icon" alt="User Icon">
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-    
+    <section class="hero-section">
         <div class="hero-content">
-            <h1>Effortless Travel Planning! <br>Let AI Be Your Expert Guide.</h1> 
-            <p>Bid farewell to generic holiday packages. Get Your AI-Personalised Itineraries</p>
-            <button class="free-button">Plan Itinerary For Free!</button>
-            <div class="hero-images">
-                <div class="hero-image-text">
-                    <img src="route.png" alt="">
-                    <p>Free Personalized
-                    Itineraries</p>
+            <h1>Road Trip Planner</h1>
+            <p>Bid farewell to generic holiday packages.<br>Get Your AI-Personalised Itineraries</p>
+            <button class="plan-itinerary-btn">Plan Itinerary For Free!</button>
+            <div class="features">
+                <div class="feature">
+                    <img src="website/route.png" alt="Feature Icon">
+                    <p>Free Personalized Itineraries</p>
                 </div>
-                <div class="hero-image-text">
-                    <img src="image-2.png" alt="">
-                    <p>Affordable &
-                    Flexible Bookings</p>
+                <div class="feature">
+                    <img src="website/image-2.png" alt="Feature Icon">
+                    <p>Affordable & Flexible Bookings</p>
                 </div>
-                <div class="hero-image-text">
-                    <img src="Payment-46.png" alt="">
-                    <p>Zero Hidden
-                    Charges</p>
+                <div class="feature">
+                    <img src="website/Payment-46.png" alt="Feature Icon">
+                    <p>Zero Hidden Charges</p>
                 </div>
             </div>
         </div>
-        <div class="contact-form">
+        <div class="hero-form">
             <h2>Get your free travel plan now</h2>
-            <form action="submit_travel_plan.php" method="POST">
+            <form action="process_form.php" method="POST">
                 <label for="explore">What do you want to explore?</label>
-                <input type="text" id="explore" name="explore" required>
-
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" value="Delhi" readonly>
-
-                <label for="destination">Search Destination:</label>
-                <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
-
-                <label>When are you planning to travel?</label>
-                   <div class="date-picker">
-                        <div class="start-date">
-                            <label for="start-date">Start Date:</label>
-                            <input type="date" id="start-date" name="start_date" required>
-                         </div>
-                    <div class="end-date">
-                          <label for="end-date">End Date:</label>
-                          <input type="date" id="end-date" name="end_date" required>
-                    </div>
-                </div>
-                <div>
+                <input type="text" id="explore" name="explore" placeholder="Delhi, IN" required>
+                <label for="departing">Departing from</label>
+                <input type="text" id="departing" name="departing" placeholder="Search destination" required>
+                <label for="start_date">Start Date</label>
+                <input type="date" id="start_date" name="start_date" required>
+                <label for="end_date">End Date</label>
+                <input type="date" id="end_date" name="end_date" required>
                 <label for="not_sure">
                     <input type="checkbox" id="not_sure" name="not_sure">
-                     Not sure? Let us decide
+                    Not sure? Let us decide best time for your trip.
                 </label>
-                </div>
                 <button type="submit">Continue</button>
             </form>
         </div>
@@ -429,22 +538,22 @@ header {
         <h2>How it works?</h2>
         <div class="steps">
             <div class="step">
-                <img src="image-3.png" alt="Step 1 Image">
+                <img src="website/image-3.png" alt="Step 1 Image">
                 <h3>Handpick Your Selection</h3>
                 <p>From solo travel to workcation, honeymoon to family travel, tell us about your mood, budget & timeline.</p>
             </div>
             <div class="step">
-                <img src="image-4.png" alt="Step 2 Image">
+                <img src="website/image-4.png" alt="Step 2 Image">
                 <h3>Unleash AI’s Itinerary Wizardry!</h3>
                 <p>Get a unique itinerary completely personalized for you, with all bookings in one place.</p>
             </div>
             <div class="step">
-                <img src="image-5.png" alt="Step 3 Image">
+                <img src="website/image-5.png" alt="Step 3 Image">
                 <h3>Easy Bookings with 24x7 Concierge</h3>
                 <p>From your stays to activities, book-it-all in one click, and enjoy 24x7 assistance while you explore.</p>
             </div>
             <div class="step">
-                <img src="image-6.png" alt="Step 4 Image">
+                <img src="website/image-6.png" alt="Step 4 Image">
                 <h3>No Commissions - Pay for what you get</h3>
                 <p>No hidden charges during & after bookings. Pay For What You Get.</p>
             </div>
@@ -456,7 +565,7 @@ header {
         <div class="destination-cards">
             <div class="card">
                 <div class="image-container">
-                    <img src="image-7.png" alt="Jammu & Kashmir">
+                    <img src="website/image-7.png" alt="Jammu & Kashmir">
                     <h3>Jammu & Kashmir</h3>
                     <p>From ₹11,295/- per day</p>
                     <button class="play-button">Plan a trip</button>
@@ -467,7 +576,7 @@ header {
             </div>
             <div class="card">
                 <div class="image-container">
-                    <img src="image-8.png" alt="Ladakh">
+                    <img src="website/image-8.png" alt="Ladakh">
                     <h3>Ladakh</h3>
                     <p>From ₹6,133/- per day</p>
                     <button class="play-button">Plan a trip</button>
@@ -478,7 +587,7 @@ header {
             </div>
             <div class="card">
                 <div class="image-container">
-                    <img src="image-9.png" alt="Kerala">
+                    <img src="website/image-9.png" alt="Kerala">
                     <h3>Kerala</h3>
                     <p>From ₹6,551/- per day</p>
                     <button class="play-button">Plan a trip</button>
@@ -489,7 +598,7 @@ header {
                 </div>
             </div>
             <div class="card">
-                <div class="image-container">
+                <div class="website/image-container">
                     <img src="image-10.png" alt="Rajasthan">
                     <h3>Rajasthan</h3>
                     <p>From ₹6,916/- per day</p>
@@ -503,6 +612,23 @@ header {
             
         </div>
     </section>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $explore = htmlspecialchars($_POST['explore']);
+    $departing = htmlspecialchars($_POST['departing']);
+    $start_date = htmlspecialchars($_POST['start_date']);
+    $end_date = htmlspecialchars($_POST['end_date']);
+    $not_sure = isset($_POST['not_sure']) ? 'Yes' : 'No';
 
+    // Process the form data, e.g., save to database, send email, etc.
+
+    echo "Form submitted successfully!<br>";
+    echo "Explore: $explore<br>";
+    echo "Departing from: $departing<br>";
+    echo "Start Date: $start_date<br>";
+    echo "End Date: $end_date<br>";
+    echo "Not Sure: $not_sure<br>";
+}
+?>
 </body>
 </html>
