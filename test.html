@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earnist - Unlock Your Earning Potential</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    PADDING-LEFT: 80PX;
+    
+}
+header p{
+    font-size: 30px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 80px;
+}
+nav{
+    margin-left: 45%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-inline-end: 80px;
+    padding: 5px 10px 5px 10px;
+    text-decoration-line: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    text-decoration-line: none;
+}
+
+.btn-secondary {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    text-decoration-line: none;
+}
+
+.hero-image {
+    max-width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.service-box:last-child {
+    margin-right: 0;
+}
+
+.service-buttons .btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.service-buttons .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.second-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.second-page .second-image{
+
+    padding-right: 90px;
+}
+
+.second-page .second-image1{
+    padding-left: 60px;
+}
+
+.third-page {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+.brand-logos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.brand-logos li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.fourth-page {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    text-align: center;      /* Centers the text within the container */
+    height: 75vh;           /* Makes the section take up the full viewport height */
+    background-color: #f8f8f8; /* Example background color, adjust as needed */
+}
+
+.fourth-page .content p {
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+}
+
+.fourth-page .content h1 {
+    font-size: 30px;
+    color: #333;
+    margin: 30px;
+
+}
+.brand1-logo {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -117px;
+    gap: 10px;
+    
+}
+
+.brand1-logo img {
+    padding-top: 10px;
+}
+.brand1-logo p {
+margin-bottom: 15px;
+font-weight: bold;
+}
+.sixth-content {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.sixth-page {
+ padding-left: 80px;
+ padding-right: 40px;
+}
+.box-card{
+    display: flex;
+    gap: 59px;
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+   
+    padding: 40px 20px 40px 20px;
+    border: 1px solid #4e4e4e;
+    border-radius: 4px;
+    align-items: flex-start;
+}
+.card1 {
+   
+padding: 40px 80px 40px 80px;
+   border: 1px solid #4e4e4e;
+   border-radius: 4px;
+   align-items: flex-start;
+}
+.card2 {
+   
+    padding: 40px 80px 40px 60px;
+   border: 1px solid #4e4e4e;
+   border-radius: 4px;
+   align-items: flex-start;
+}
+
+.seventh-page {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    gap: 10px;
+    background-color: black;
+   
+}
+
+.brand2-logo {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+   
+}
+.brand2-logo img{
+    padding-top: 10px;
+}
+.seventh-page p {
+    padding-top: 20px;
+    font-weight: 900;
+}
+.eight-page{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 90px;
+}
+.eight-image {
+    margin-top: -60px;
+}
+.eight-image h2 {
+    font-size: 30px;
+}
+.btn-primary1 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration-line: none;
+
+}
+.btn-primary2 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 40px 10px 40px;
+    text-decoration-line: none;
+
+}
+.eight-button p {
+    padding-top: 30px;
+}
+.eight-button {
+    padding-top: 40px;
+}
+.eight-button1 {
+    padding-top: 40px;
+}
+.eight-button .icon1 {
+    padding-top: 30px;
+}
+.eight-button1 p {
+    padding-top: 30px;
+}
+.eight-button1 .icon1 {
+    padding-top: 30px;
+}
+.nine-page {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    text-align: center;      /* Centers the text within the container */
+    height: 55vh;           /* Makes the section take up the full viewport height */
+    background-color: #f8f8f8; /* Example background color, adjust as needed */
+}
+.nine-content h2 {
+     font-weight: bold;
+     font-size: 40px;
+}
+.ten-content {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    padding-left: 30px;
+    margin-top: -80px;
+}
+
+.last-page {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    text-align: center;      /* Centers the text within the container */
+    height: 65vh;           /* Makes the section take up the full viewport height */
+    background-color: #f8f8f8; /* Example background color, adjust as needed */
+}
+.last-page h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.last-page p{
+   padding: 0;
+   margin: 0;
+}
+.last-button {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    text-align: center;  
+    gap: 20px;
+}
+.btn-last {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration-line: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.btn-last:hover {
+    background-color:  black;
+    color: white;
+    border: 1px solid black;
+    text-decoration-line: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.btn-last1 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 40px 10px 40px;
+    text-decoration-line: none;
+
+}
+.btn-last1:hover{
+    background-color:  black;
+    color: white;
+    text-decoration-line: none;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+footer .logo1{
+    padding-left: 30px;
+    margin-top: 50px;
+}
+.logo1 p {
+    margin-top: 30px;
+}
+.company a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+
+.Resources  a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+.Connect  a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+    nav {
+        margin-left: auto;
+        padding-left: 40px;
+    }
+
+    .sign-up{
+        margin-left: 20px;
+    }
+
+    header img{
+        padding-left: 50px;
+    }
+
+    .hero{
+        padding-left: 188px;
+    }
+
+    .fourth-page{
+        margin-top: 90px;
+    }
+
+    .fifth-page {
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header, nav {
+        display: flex;
+        text-align: center;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sign-up {
+        margin: 10px 0;
+    }
+
+    .second-page .second-image, .second-page .second-image1 {
+        padding: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons .btn {
+        padding: 8px 16px;
+        margin: 5px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-box {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services-section {
+        padding: 10px;
+    }
+
+    .box-card {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card, .card1, .card2 {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .brand1-logo, .brand2-logo, .brand-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sixth-page, .fourth-page, .third-page, .fifth-page, .seventh-page, .eight-page, .nine-page, .ten-page, .last-page {
+        padding: 20px 10px;
+    }
+
+    .second-page .second-content p {
+        font-size: 14px;
+    }
+
+    .nine-content h2 {
+        font-size: 24px;
+    }
+
+    .ten-content, .second-page .second-content {
+        text-align: center;
+    }
+
+    .second-page .second-content p, .sixth-content p {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .last-page h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .logo1 p {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header p {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons .btn {
+        padding: 6px 12px;
+    }
+
+    .box-card .card h2, .box-card .card p {
+        font-size: 14px;
+    }
+
+    .btn-primary1, .btn-primary2, .btn-last, .btn-last1 {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+    <header>
+        <img src="logo.png" alt="Earnist Logo">
+        <p> Earnist </p>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <a href="#" class="sign-up">Login</a>
+       
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Earning Potential with Drop Servicing</h1>
+            <p>Discover the Secrets to Effortless Income: Our Drop Servicing Platform Guides You Every Step of the Way. Earn Passive Profits by Leveraging Your Skills and Our Innovative Solutions.</p>
+            
+        </div>
+        <div class="hero-image">
+            <div class="services-section">
+                <h2>Earnist Services</h2>
+                <div class="services">
+                    <div class="service-box">Build</div>
+                    <div class="service-box">Launch</div>
+                    <div class="service-box">Optimize</div>
+                </div>
+                <div class="service-buttons">
+                    <a href="#" class="btn btn-primary">Start Explor</a>
+                    <a href="#" class="btn btn-secondary">Switch techezone</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second-page">
+        <div class="second-image">
+            <img src="info.png" alt="Earnist Logo">
+        </div>
+        <div class="second-content">
+            <p>Transform Your Income Stream with </br> Our Cutting- Edge Drop Servicing Platform.</br>
+                Unlock New Revenue Opportunites </br>and Achieve Financial Freedom by </br>
+                Tapping into the Growing</p>
+        </div>
+        <div class="second-image1">
+            <img src="hero.png"Earnist Logo>
+        </div>
+    </section>
+    <section class="third-page">
+        <ul class="brand-logos">
+            <li><a href="#">Shell</a></li>
+            <li><a href="#">Ferrari</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Gucci</a></li>
+            <li><a href="#">Apple</a></li>
+        </ul>
+    </section>
+    <section class="fourth-page">
+        <div class="content"> 
+            <p>Earn with more drop servicing</p>
+            <h1>Unlock Passive Income with Drop Servicing</h1>
+            <p>Maximize Your Earning Potential by Leveraging Our Innovative Drop Servicing Platform. Discover How to Turn</br> 
+                Your Skills into a Lucrative Income Stream and Achieve Financial Independence. Whether You're a Freelancer, </br>Small Business Owner, or Aspiring Entrepreneur</p>
+        </div>
+       
+    </section>
+    <section class="fifth-page">
+      <div class="brand1-logo">
+        <img src="microsoft_icon.png" alt="Earnist Logo">
+        <p> Microsoft </p>
+        <img src="amzon.png" alt="Earnist Logo">
+        <p> Amazon</p>
+        <img src="google_icon.png" alt="Earnist Logo">
+        <p> Google </p>
+      </div>
+    </section>
+    <section class="sixth-page">
+        <div class="sixth-content">
+            <p>
+                Revolutionize Your Income with Drop 
+                Servic ing Our Platform Empowers 
+                You to Capitalize on the Growing Demand 
+                for Outsourced Services and Unlock New </p>
+            <p>Unlock Passive Income Opportunities with 
+               Drop Servicing Our Innovative Platform 
+               Helps You Monetize Your Skills and Tap 
+               into the Lucrative</p>
+            <p>Elevate Your Earning Potential with Drop 
+               Servicing Our Platform Offers a Seamless 
+               Way to Capitalize on the Booming Demand 
+               for Outsourced Services</p>
+        </div>
+    </section>
+    <section class="box-card">
+        <div class="card">
+            <h2>Earn More with </br> Drop Servicing</h2>
+            <p>Maximize Your Earning Potential </br> by Leveraging the Power of Drop Servicing</p>
+        </div>
+        <div class="card1">
+            <h2>Sign Up</h2>
+            <div class="info">
+                <div class="top">
+                  <h3>Start Earning</h3>
+                  <p>Unlock passive Action</p>
+                </div>
+                <h3>Join Now</h3>
+                <h3>Earn More</h3>
+                <div class="btn">Get Started</div>
+              </div>
+        </div>
+        <div class="card2">
+            <h2>Revolutionize Your </br> Income with Drop </br> Servicing
+            </h2>
+            <p>Discover the Secrets to Effortless </br> Income Our Drop Servicing </br> Plattam Oundes You Every Step</p>
+        </div>
+    </section>
+    
+        <section class="seventh-page">
+            <div class="brand2-logo">
+                <img src="hourglass_end_icon.png" alt="Earnist Logo">
+                <p> Coca-Cola </p>
+                <img src="nike.jpg" alt="Earnist Logo">
+                <p> Nike</p>
+                <img src="starbuck.png" alt="Earnist Logo">
+                <p> Starbucks </p>
+              </div>
+        </section>
+    <section class="eight-page">
+        <div class="eight-button">
+            <a href="#" class="btn btn-primary1">Earn now</a>
+            <p>Transform Your income Stream. </br>
+                with Our Cutting-Edge Drop Servcing Platform. </br>
+                Unlock New Revenue Opportunities and</p>
+            <div class="icon1">
+                <img src="amazon.logo1.png" alt="Earnist Logo">
+                <img src="google-logo2.png" alt="Earnist Logo">
+                <img src="microsoft-logo3.png" alt="Earnist Logo">
+            </div>
+        </div>
+        <div class="eight-image">
+        <h2>Achieve financial</br>Freedom with Drop</h2>
+        <p>Unlock Passive Income Opportunities </br> 
+            with Drop Servicing.Our Innovative </br>
+            Platform Helps You Monetize Your Skills </br>
+            and Tap into the Lucrative Gig Economy</p>
+            <img src="hero.png" alt="Earnist Logo"></div>
+        <div class="eight-button1">
+            <a href="#" class="btn btn-primary2">Learn now</a>
+            <p>Elevate Your Earning Potential. </br> 
+                with Drop Servicing. </br> Our Platform Offers a Seamless 
+                Way </br> to Capitalize on the Booming</p>
+            <div class="icon1">
+                <img src="amazon.logo1.png" alt="Earnist Logo">
+                <img src="google-logo2.png" alt="Earnist Logo">
+                <img src="microsoft-logo3.png" alt="Earnist Logo">
+            </div>
+        </div>
+    </section>
+    <section class="nine-page">
+        <div class="nine-content">
+            <a href="#" class="btn btn-primary3">Earn more</a>
+            <h2>Unlock Passive Income</h2>
+        </div>
+        
+    </section>
+    <section class="ten-page">
+        <div class="ten-content">
+            <div class="ten-conten1">
+                <h3>Earn</h3>
+                <p>
+                    Transform Your income Stream.
+                    with Our </br> Cutting-Edge Drop Servcing Platform.</br> 
+                    Unlock New Revenue Opportunities and </p>
+            </div>
+            <div class="ten-conten1">
+                <h3>Earn</h3>
+                <p>Unlock Passive Income Opportunities </br> 
+                    with Drop Servicing.Our Innovative </br> 
+                    Platform Helps You Monetize Your </br> Skills
+                    and Tap into the Lucrative Gig </br> Economy</p>
+            </div>
+           
+            <div class="ten-conten1">
+                <h3>Achieve Finacial Freedom</h3>
+                <p>Elevate Your Earning Potential with Drop </br> 
+                   Servicing Our Platform Offers a Seamless </br> 
+                   Way to Capitalize on the Booming Demand </br> 
+                   for Outsourced Services</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="last-page">
+        <div class="last-content">
+            <h2>Discover the Power of Drop </br> Servicing</h2>
+            <p>Transform Your Income Stream with Our Cutting-Edge Drop Servicing </br> Platform.</p>
+        </div> </section>
+        <section class="last-button">
+            <a href="#" class="btn btn-last">Earn more</a>
+            <a href="#" class="btn btn-last1">Join today</a>
+        </section>
+
+        <footer>
+            <div class="logo1">
+                <img src="logo.png" alt="Earnist Logo">
+                <p>© 2024 Earnist Inc<br>
+                    All rights reserved</p>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="Resources">
+                <h2>Resourses</h2>
+      <a href="">Blog</a>
+      <a href="">FAQ</a>
+      <a href="">Terms</a>
+      <a href="">Privacy</a>
+                
+                </div>
+                <div class="Connect">
+                    <h2>Connect</h2>
+                    <a href="">Twitter</a>
+                    <a href="">Linkdin</a>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    
+                    </div>
+        </footer>
+</body>
+</html>
