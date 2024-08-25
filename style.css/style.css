@@ -291,6 +291,13 @@ header {
     @media (min-width:300px) and (max-width:521px)
     
         { 
+            html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden
+}
             .header-image img {
                 inline-size: 47px;
             }
@@ -434,6 +441,13 @@ header {
 
         
         @media (min-width:500px) and (max-width:772px){
+            html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden
+}
             nav {
                 font-size: 15px;
             }
@@ -490,6 +504,13 @@ header {
         } 
 
         @media (min-width:769px) and (max-width:882px){
+            html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden
+}
             .nine-content {
                 display: flex;
                 justify-content: center;
