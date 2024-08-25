@@ -1,0 +1,510 @@
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 4s;
+  }
+  .animate__animated.animate__rollIn {
+    --animate-duration: 5s;
+  }
+  body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+    .hero{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        
+
+    }
+   .hero-content{
+    padding-right: 30px;
+   }
+    .hero-image{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    .service-box {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.services-section > h2{
+    margin: 10px;
+}
+.services {
+    margin: 10px;
+    flex: auto;
+    /* gap: 10px; */
+    display: flex
+}
+.second-page{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.second-content p{
+    padding: 0px 73px;
+}
+.logo{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.logo i{
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.brand-logos{
+    display: flex;
+    gap:20px;
+    justify-content: space-evenly;
+}
+.card p{
+    text-align: center;
+}
+.third-page{
+   
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.fourth-page{
+    text-align: center;
+    margin-top: 58px;
+}
+.brand1-logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size:20px;
+}
+.fifth-content{
+    display: flex;
+    
+}
+.fifth-content p{
+    padding-right: 20px;
+}
+.fifth-page{
+    padding: 0px 30px;
+}
+.box-card{
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    width: 100%;
+}
+.card1 {
+   
+   padding: 40px 20px 40px 20px;
+   border: 1px solid #4e4e4e;
+   border-radius: 4px;
+   align-items: flex-start;
+}
+.sixth-page{
+    background-color: black;
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 40px 42px;
+}
+.why{
+    margin: auto;
+   
+    padding-right: 30px;
+}
+.why1 {
+    display: flex;
+    margin: auto;
+    padding-right: 30px;
+}
+.eight-button1{
+    padding: 10px 32px;
+    border-radius: 10px;
+   
+}
+.eight-button{
+    margin-top: 104px;
+}
+.eight-button2{
+    margin-top: 104px;
+}
+.eight-page{
+    margin: auto;
+    display: flex;
+justify-content: space-around;
+width:85% ;}
+.eight-image img{
+    inline-size: 241px;
+
+}
+.content p {
+    padding-left: 74px;
+    padding-right: 74px;
+}
+.nine-page{
+    width: 100%;
+    margin-top: 54px;
+    margin-bottom: 80px;
+}
+.nine-content1{
+    background-color: black;
+    color: white;
+    border: solid;
+    border-radius: 10px 0px 0px 0px;
+    padding: 41px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+.nine-content1 i{
+    font-size: 27px;
+}
+.nine-content{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    
+}
+.ten-page{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.ten-h3{
+    font-size: 40px;
+    text-align: center;
+}
+.ten-content{
+    display: flex;
+    justify-content: space-around;
+}
+.last-content{
+    text-align:center;
+}
+.last-content h2{
+    font-size:50px;
+}
+.last-button{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.btn-last {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration-line: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.btn-last:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+
+
+}
+.logo1{
+    padding-top: 52px;
+}
+.logo1 img{
+    inline-size: 39px;
+}
+.footer1{
+    display: flex;
+    margin: auto;
+    padding-top: 82px;
+    gap: 83px;
+}
+.company a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+.Resources  a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+.Connect  a{
+    color: white;
+    text-decoration-line: none;
+    display: block;
+}
+.header-image img{
+    inline-size: 82px;
+}
+nav{
+    font-size: 20px;
+    
+}
+ul a {
+    text-decoration-line: none;
+    padding: 0px 20px;
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(241, 240, 238);
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+
+}
+.login {
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+  
+    @media (min-width:300px) and (max-width:521px)
+    
+        { 
+            .header-image img {
+                inline-size: 47px;
+            }
+            .login{
+                padding: 2px 8px;
+            }
+            ul a {
+                padding: 10px 12px;
+            }
+            nav{
+                font-size: 10px;
+            }
+            body {
+                
+                margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+            }
+            .hero{
+            display: block;
+            text-align: center;
+            
+        }
+        .card1{
+            margin: 0px 27px 0px 37px;
+        }
+        .hero-image{
+            MARGIN: 0PX 0PX 0PX 0PX;
+        }
+        .hero-content{
+            font-size: 10px;
+            padding-left: 12px
+                }
+  .service-box{
+    margin-bottom: 10px;}
+
+.services {
+    display: block;
+}
+        .services-section{
+            font-size: 10px;
+            
+        }
+        .services-section h2{
+            padding-top: 20px;
+        }
+        .second-page{
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;}
+    
+    .second-image1 img {
+        inline-size: 201px;
+    }
+    .logo{
+        display: block;
+    }
+    .third-page{
+        margin: 0px 4px 0px 4px;
+    }
+    .brand-logos{
+        display: block;
+    /* text-align: center; */
+    margin-top: 41px;
+    padding: 10px;}
+
+    .fifth-content {
+    display: block;
+    text-align: center;
+}
+.box-card{
+    display: block;}
+    .card1{
+        margin-bottom: 15px;
+    }
+    .sixth-page{
+        display: block;
+        margin: 0px 4px 0px 4px;
+    }
+    .why {
+    margin: auto;
+    /* padding-left: 40px; */ 
+    padding-right: 30px;
+}
+    .why1 {
+    display: block;
+    /* display: flex; */
+    margin: auto;
+}
+.eight-page{
+    display: block;
+    text-align: center;
+   
+}
+.eight-button{
+    margin-top: 44px;
+}
+.eight-button2{
+    margin-top: 44px;;
+}
+.nine-content1{
+    margin: 0px 23px 0px 23px;
+    display: block;
+}
+.nine-content{
+    display: block;
+}
+.ten-content{
+    display: block;
+    text-align: center;
+}
+.ten-h3{
+    font-size: 27px;
+}
+.last-page{
+    margin-top: 70px;
+}
+.last-content h2 {
+    font-size: 28px;
+    }     
+    .footer {
+        padding-left: 30px;
+    }
+    .footer1{
+        display: contents;
+        font-size: 11px;
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+    .company h2{
+        padding-right: 10px;
+    }
+    .Resources h2{
+        padding-right: 10px;
+    }
+    .content h2{
+        padding-right: 10px;
+    }
+        }
+
+        
+        @media (min-width:500px) and (max-width:772px){
+            nav {
+                font-size: 15px;
+            }
+            .second-content p {
+                padding: 0px 11px;
+            }
+            .second-page{
+                padding: 0px 0px;
+                margin-top: 30px;
+            }
+            .second-image img{
+                inline-size: 138px;
+            }
+            .second-image1 img{
+                inline-size: 138px;
+            }
+            .card1{
+                font-size: 12px;
+            
+                    margin: 10px 24px 10px 16px;
+                    padding: 13px 4px 15px 6px;
+
+            }
+            .box-card{
+                gap:0px;
+            }
+            .nine-content {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+            }
+            .nine-content1 {
+                background-color: black;
+                color: white;
+                border: solid;
+                border-radius: 10px 0px 0px 0px;
+                padding: 25px;
+                font-weight: bold;
+                text-align: center;
+                font-size: 14px;
+            }
+            .ten-content{
+                font-size: 10px;
+    margin: 20px;
+            }
+            .last-content h2 {
+                font-size: 35px;
+            }
+            .footer1 {
+                
+                gap: 35px;
+            }
+            
+        } 
+
+        @media (min-width:769px) and (max-width:882px){
+            .nine-content {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+            }
+            .nine-content1 {
+                background-color: black;
+                color: white;
+                border: solid;
+                border-radius: 10px 0px 0px 0px;
+                padding: 31px;
+                font-weight: bold;
+                text-align: center;
+                font-size: 24px;
+            }
+            .card1{
+                font-size: 12px;
+            
+                    margin: 10px 24px 10px 16px;
+                    padding: 13px 4px 15px 6px;
+
+            }
+        }
+        
