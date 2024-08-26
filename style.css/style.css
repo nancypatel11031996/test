@@ -887,7 +887,7 @@ header {
             font-size: 22px;
         }
         .about-sixth3{
-            margin-left: 10px;
+            margin-left: 0px;
             margin-bottom: 10px;
         }
         
@@ -906,7 +906,7 @@ header {
         .faq{
             display: block;
             text-align: center;
-            margin-left: 24px;
+            margin-left: 28px;
         }
         .faq-container {
             padding: 26px;
